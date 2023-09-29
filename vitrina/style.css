@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  overflow-x: scroll;
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ded9d9;
+  transition: all 1s;
+  opacity: 0;
+  padding: 1rem;
+}
+.card.element-show {
+  opacity: 1;
+  transition: all 1s;
+}
+.wrapper::-webkit-scrollbar {
+  background-color: rgba(26, 24, 47, 0.15);
+  border-radius: 10px;
+  height: 20px;
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+  background: #83141f;
+  border-radius: 10px;
+}

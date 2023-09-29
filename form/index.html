@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="form">
+        <form>
+          <div class="basic">
+            <h3>Основное</h3>
+            <div class="basic__inputs">
+              <label for="username">Имя</label>
+              <div class="username__box">
+                <input
+                  class="username"
+                  id="username"
+                  placeholder="по пaспорту" />
+              </div>
+              <br />
+              <label for="color">Цвет вашего настроения</label>
+              <div class="color__box">
+                <input id="color" type="color" value="#002AFF" />
+              </div>
+            </div>
+          </div>
+          <div class="additional">
+            <div class="comment">
+              <h3>Дополнительное</h3>
+
+              <label for="textarea">Комментарий</label>
+              <div class="textarea__input">
+                <textarea
+                  id="textarea"
+                  placeholder="Напишите чоть что-нибудь. Если хотите, конечно."></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="buttons">
+            <label>
+              <input class="radio" type="radio" />
+              <span class="custom-radio"></span>
+              Ну а тут просто лежит радиобатон</label
+            >
+            <br />
+            <label>
+              <input class="checkbox" type="checkbox" />
+              <span class="custom-checkbox"></span>
+              <span class="agreement"
+                >Я соглашаюсь на все, что бы вы не придумали и осознаю, что это
+                может означать <a>что угодно</a></span
+              >
+            </label>
+            <br />
+            <button class="send">Отправить все мои данные</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
