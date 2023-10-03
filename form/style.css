@@ -105,18 +105,25 @@ legend {
 }
 
 .wrapper {
-  max-width: 1440px;
   margin: 0 auto;
+  background-color: gray;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 2rem;
 }
 
 .form {
   margin: 0 auto;
+  background-color: white;
+  max-width: 50rem;
+  box-shadow: 0px 0px 8px 0px black;
 }
 
 h3 {
@@ -128,7 +135,8 @@ h3 {
 .additional,
 .buttons {
   width: 100%;
-  margin: 2rem 0 2rem 0;
+  margin: 1rem 0 1rem 0;
+  padding-left: 3rem;
 }
 .additional {
   background-color: #fff7bf;
@@ -260,6 +268,9 @@ input {
   color: blue;
   text-decoration: underline;
 }
+.agreement > a:hover {
+  color: #0000ff7a;
+}
 
 .send {
   width: 100%;
@@ -271,4 +282,30 @@ input {
   border-radius: 0.2rem;
   letter-spacing: 1px;
   box-shadow: 4px 8px 6px #0000001a;
+}
+
+.rules {
+  position: absolute;
+  background: brown;
+  padding: 2rem;
+  height: 100%;
+  z-index: 5;
+  display: none;
+  transition: top 1s ease-out 0.5s;
+}
+
+.close {
+  width: 30px;
+  cursor: pointer;
+  position: absolute;
+  right: 31px;
+}
+
+.close:hover {
+  background: #9e9e9e;
+  border-radius: 50%;
+}
+
+.rules__text {
+  margin-top: 5rem;
 }
